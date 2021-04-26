@@ -23,6 +23,7 @@
 	background: #f0c14b;
 	border: 0.5px solid;
 	border-radius: 10px;
+	border-color: #f0c14b;
 	margin-top: 10px;
 	color: #111;
 	padding-left: 10px;
@@ -36,4 +37,8 @@
 .product__info {
 	height: 100px;
 	margin-bottom: 15px;
+}
+
+.product__rating {
+	display: flex;
 }
