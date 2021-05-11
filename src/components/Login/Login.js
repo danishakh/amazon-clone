@@ -11,6 +11,15 @@ function Login() {
 	const signIn = (e) => {
 		e.preventDefault();
 		// firebase authentication logic
+		auth
+			.signInWithEmailAndPassword(email, password)
+			.then((auth) => {
+				console.log("Login Successfully");
+				console.log(auth);
+
+				history.push("/");
+			})
+			.catch((error) => alert(error.message));
 	};
 
 	const register = (e) => {
