@@ -77,9 +77,9 @@ function Login() {
 					</button>
 				</form>
 				<p>
-					By signing-in you agree to AmaZonia's conditions of use & sale. Please
-					see our non-existent privacy notice, cookies notice and our
-					interest-based ads.
+					By signing-in you agree to AmaZonia's YoLo Clone conditions of use &
+					sale. Please see our non-existent privacy notice, cookies notice and
+					our interest-based ads.
 				</p>
 				<button
 					type="submit"
