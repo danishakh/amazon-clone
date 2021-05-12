@@ -10,7 +10,7 @@ function Product({ id, title, image, price, rating }) {
 	console.log("basket: ", basket);
 
 	const addToBasket = () => {
-		enqueueSnackbar(`${title} added to your Basket!`, {
+		enqueueSnackbar(`${title} was added to your Basket!`, {
 			variant: "success",
 			autoHideDuration: 3000,
 		});
