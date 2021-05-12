@@ -1,13 +1,20 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "../../StateProvider";
+import { useSnackbar } from "notistack";
 
 function Product({ id, title, image, price, rating }) {
 	const [{ basket }, dispatch] = useStateValue();
+	const { enqueueSnackbar } = useSnackbar();
 
 	console.log("basket: ", basket);
 
 	const addToBasket = () => {
+		enqueueSnackbar(`${title} added to your Basket!`, {
+			variant: "success",
+			autoHideDuration: 3000,
+		});
+
 		// dispatch the item into the data layer
 		dispatch({
 			type: "ADD_TO_BASKET",
