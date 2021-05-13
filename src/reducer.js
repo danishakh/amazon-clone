@@ -3,9 +3,6 @@ export const initialState = {
 };
 
 // Selector (production env practice)
-// export const getBasketTotal = (basket) => {
-// 	basket?.reduce((acc, current) => acc + current.price, 0);
-// };
 
 const reducer = (state, action) => {
 	console.log(action);

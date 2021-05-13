@@ -25,7 +25,12 @@
 	flex: 0.2;
 }
 
+.payment__priceContainer {
+	margin-top: 10px;
+}
+
 .payment__address,
-.payment__items {
+.payment__items,
+.payment__details {
 	flex: 0.8;
 }
